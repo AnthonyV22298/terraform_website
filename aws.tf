@@ -28,13 +28,13 @@ provider "github" {
 }
 
 resource "github_actions_secret" "deploy_aws_access_key" {
-  repository       = "static-site-demo"
+  repository       = "terraform_website"
   secret_name      = "DEPLOY_AWS_ACCESS_KEY_ID"
   plaintext_value  = module.aws_static_site.deploy-id     
 }
 
 resource "github_actions_secret" "deploy_aws_access_secret" {
-  repository       = "static-site-demo"
+  repository       = "terraform_website"
   secret_name      = "DEPLOY_AWS_SECRET_ACCESS_KEY"       
   plaintext_value  = module.aws_static_site.deploy-secret 
 }
