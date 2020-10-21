@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "aws_static_site" {
-    source  = "AnthonyV22298/terraform_website/aws"
+    source  = "dvargas92495/static-site/aws"
     version = "1.2.0"
 
     domain = "terraform_website.duckfarts.net"
