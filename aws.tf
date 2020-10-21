@@ -19,7 +19,7 @@ module "aws_static_site" {
     domain = "terraform_website.duckfarts.net"
     secret = "secret-key"
     tags = {
-        Application = "terraform_website"
+        Application = "Static Site Demo"
     }
 }
 
