@@ -16,7 +16,7 @@ module "aws_static_site" {
     source  = "AnthonyV22298/terraform_website/aws"
     version = "1.2.0"
 
-    domain = "ducky.duckfarts.net"
+    domain = "terraform_website.duckfarts.net"
     secret = "secret-key"
     tags = {
         Application = "Static Site Demo"
