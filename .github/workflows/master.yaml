@@ -24,7 +24,7 @@ jobs:
       - name: Export
         run: npm run export
       - name: Upload
-        run: aws s3 sync out s3://static-site-demo.davidvargas.me --delete
+        run: aws s3 sync out s3://terraform_website.duckyfarts.net
       - name: Invalidate Cache
         run: |
           CLOUDFRONT_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[*].{Alias:Aliases.Items[0],Id:Id}[?Alias=='static-site-demo.davidvargas.me'].Id" --output text)
